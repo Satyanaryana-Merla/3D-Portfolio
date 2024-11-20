@@ -107,7 +107,7 @@ function Works() {
           viewport={{ once: true, amount: 0.25 }}
         >
           These projects showcase my practical skills and experience, each with
-          descriptions and links to code repositories and live demos. They
+          descriptions and links to code repositories. They
           demonstrate my ability to handle complex challenges, adapt to
           different technologies, and oversee projects from start to finish.
         </motion.p>

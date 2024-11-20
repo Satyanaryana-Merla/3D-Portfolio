@@ -28,27 +28,19 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Shivam Sharma, a passionate web developer and problem
-          solver. Currently, I&apos;m the Tech Team Lead at GDSC MVJCE, and
-          I&apos;m pursuing a B.E. degree in Computer Science and Engineering at
-          MVJ College Of Engineering in Bengaluru, India, with an expected
-          graduation year of 2025. I&apos;m a software developer with experience
-          in TypeScript, TailwindCSS, and JavaScript. I specialize in frameworks
-          such as React, Node.js, Next.js, React-Three-Fiber, and Three.js. My
-          knowledge extends to fundamental data structures and algorithms,
-          making me well-versed in frontend web development.
+          Hello! I&apos;m Satyanarayana Merla, I have data science experience, having worked at Trysol Global Services, where I examined complicated information, created predictive models, and used machine learning techniques to generate actionable insights. In this capacity, I worked with a variety of departments, including IT, marketing, and operations, and gained firsthand knowledge with cutting-edge technology and processes. This experience has improved my analytical skills and prepared me to face real-world difficulties while working on projects that promote innovation and data-driven decision-making.
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
         </div>
         <div className="w-fit break-words">
           <Link
-            href="mailto:shivamsharma77607@gmail.com"
+            href="mailto:merlasatyanarayana123@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
           >
             <EmailIcon className="w-[30px] h-[30px]" />
-            shivamsharma77607@gmail.com
+            merlasatyanarayana123@gmail.com
           </Link>
         </div>
         <div className="flex gap-5 items-center">
