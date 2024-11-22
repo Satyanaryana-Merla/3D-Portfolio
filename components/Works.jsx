@@ -26,11 +26,12 @@ function ProjectCard({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
+      className="w-full h-full"
     >
       <Tilt
         tiltMaxAngleX="10"
         tiltMaxAngleY="10"
-        className="dark:bg-bgSecondaryDark bg-bgSecondaryLight p-5 rounded-2xl sm:w-[370px] w-full h-fit min-h-[590px] shadow-sm shadow-primary"
+        className="dark:bg-bgSecondaryDark bg-bgSecondaryLight flex flex-col items-end p-5 rounded-2xl w-full h-full min-h-[590px] shadow-sm shadow-primary"
       >
         <div className="relative w-full h-[230px]">
           <div className="w-full h-full object-cover rounded-2xl relative">
@@ -70,7 +71,7 @@ function ProjectCard({
           </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className=" flex flex-wrap self-center mt-auto gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -113,7 +114,7 @@ function Works() {
         </motion.p>
       </div>
 
-      <div className="md:mt-20 mt-10 flex justify-center flex-wrap gap-7">
+      <div className="md:mt-20 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full h-full">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

@@ -34,27 +34,35 @@ const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Developer",
+    title: "Data Analysis and Exploration",
     icon: <FullStackIcon />,
   },
   {
-    title: "Frontend Developer",
+    title: "Predictive Modeling and Machine Learning",
     icon: <FrontendIcon />,
   },
   {
-    title: "Backend Developer",
+    title: " Data Engineering",
     icon: <BackendIcon />,
   },
   {
-    title: "Problem Solving",
+    title: "Business Intelligence and Visualization",
     icon: <ProblemSolvingIcon />,
   },
   {
-    title: "Freelancer",
+    title: "Natural Language Processing (NLP)",
     icon: <FreelancerIcon />,
   },
   {
-    title: "Leadership",
+    title: "Data Strategy Consulting",
+    icon: <LeaderShipIcon />,
+  },
+  {
+    title: "Research and Development",
+    icon: <LeaderShipIcon />,
+  },
+  {
+    title: "Training and Support",
     icon: <LeaderShipIcon />,
   },
 ];
@@ -62,98 +70,69 @@ const services = [
 const technologies = {
   languages: [
     {
-      name: "HTML5",
-      icon: "/assets/tech/html5.svg",
-      link: "https://html.spec.whatwg.org/multipage/",
-    },
-    {
-      name: "CSS3",
-      icon: "/assets/tech/css3.svg",
-      link: "https://www.w3.org/Style/CSS/Overview.en.html",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
-      link: "https://262.ecma-international.org/",
-    },
-    {
-      name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      name: "C",
-      icon: "/assets/tech/c.svg",
-      link: "https://en.cppreference.com/w/c",
-    },
-    {
-      name: "Java",
-      icon: "/assets/tech/java.svg",
-      link: "https://www.java.com/en/",
-    },
-    {
       name: "Python",
       icon: "/assets/tech/python.svg",
       link: "https://www.python.org/",
     },
+
     {
-      name: "PHP",
-      icon: "/assets/tech/php.png",
-      link: "https://www.php.net/",
+      name: "R",
+      icon: "/assets/tech/r-project-seeklogo.svg",
+      link: "https://www.r-project.org/",
     },
   ],
   frameworks: [
     {
-      name: "Next.js",
-      icon: "/assets/tech/nextjs.svg",
-      link: "https://nextjs.org/",
+      name: "Fast Api",
+      icon: "/assets/tech/fastapi-seeklogo.svg",
+      link: "https://fastapi.tiangolo.com/",
     },
     {
-      name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
-      link: "https://tailwindcss.com/",
+      name: "Django",
+      icon: "/assets/tech/django-seeklogo.svg",
+      link: "https://www.djangoproject.com/",
     },
     {
-      name: "Express.js",
-      icon: "/assets/tech/expressjs.png",
-      link: "https://expressjs.com/",
-    },
-    {
-      name: "Flutter",
-      icon: "/assets/tech/flutter.svg",
-      link: "https://flutter.dev/",
+      name: "Pytorch",
+      icon: "/assets/tech/pytorch-seeklogo.svg",
+      link: "https://pytorch.org/",
     },
   ],
   libraries: [
     {
-      name: "React",
-      icon: "/assets/tech/react.svg",
-      link: "https://react.dev/",
+      name: "Keras",
+      icon: "/assets/tech/keras-seeklogo.svg",
+      link: "https://keras.io/",
     },
     {
-      name: "Three.js",
-      icon: "/assets/tech/threejs.svg",
-      link: "https://threejs.org/",
+      name: "Tensorflow",
+      icon: "/assets/tech/tensorflow-seeklogo.svg",
+      link: "https://www.tensorflow.org/",
     },
     {
-      name: "Styled-Components",
-      icon: "/assets/tech/styled-components.png",
-      link: "https://styled-components.com/",
+      name: "Seaborn",
+      icon: "/assets/tech/seaborn-seeklogo.svg",
+      link: "https://seaborn.pydata.org/",
     },
     {
-      name: "Framer-motion",
-      icon: "/assets/tech/framer.svg",
-      link: "https://www.framer.com/motion/",
+      name: "Matplotlib",
+      icon: "/assets/tech/matplotlib-seeklogo.svg",
+      link: "https://matplotlib.org/",
     },
     {
-      name: "NextAuth.js",
-      icon: "/assets/tech/nextauthjs.png",
-      link: "https://next-auth.js.org/",
+      name: "Numpy",
+      icon: "/assets/tech/numpy-seeklogo.svg",
+      link: "https://numpy.org/",
     },
     {
-      name: "Prisma",
-      icon: "/assets/tech/prisma.svg",
-      link: "https://www.prisma.io/",
+      name: "Pandas",
+      icon: "/assets/tech/pandas-seeklogo.svg",
+      link: "https://pandas.pydata.org/",
+    },
+    {
+      name: "Scikit-Learn",
+      icon: "/assets/tech/scikit-learn-seeklogo.svg",
+      link: "https://scikit-learn.org/stable/index.html",
     },
   ],
   tools: [
@@ -168,26 +147,14 @@ const technologies = {
       link: "https://github.com/",
     },
     {
-      name: "Postman",
-      icon: "/assets/tech/postman.svg",
-      link: "https://www.postman.com/",
-    },
-    {
-      name: "Figma",
-      icon: "/assets/tech/figma.svg",
-      link: "https://www.figma.com/",
+      name: "hugging-face-seeklogo",
+      icon: "/assets/tech/hugging-face-seeklogo.svg",//D:\3D-Portfolio\public\assets\tech\
+      link: "https://huggingface.co/",
     },
     {
       name: "Docker",
       icon: "/assets/tech/docker.svg",
       link: "https://www.docker.com/",
-    },
-  ],
-  environments: [
-    {
-      name: "Node.js",
-      icon: "/assets/tech/nodejs.svg",
-      link: "https://nodejs.org/en",
     },
   ],
   databases: [
@@ -200,6 +167,11 @@ const technologies = {
       name: "Firebase",
       icon: "/assets/tech/firebase.svg",
       link: "https://firebase.google.com/",
+    },
+    {
+      name: "SQL",
+      icon: "/assets/tech/postqresql-seeklogo.svg",
+      link: "https://www.postgresql.org/",
     },
     {
       name: "MySQL",
@@ -217,38 +189,55 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2024 - Present",
     points: [
-      "Currently serving as the Tech Lead of GDSC, responsible for guiding technical aspects, fostering collaboration, and contributing to strategic decisions.",
-      "Led induction programs, ensured new member alignment with GDSC's mission, and provided technical mentorship.",
-      "Developed GDSC MVJCE website, enhancing the organization's online visibility.",
-      "Spearheaded promotional campaigns, actively engaged with the GDSC community, and played a key role in planning and executing events.",
+      "As a data scientist with a passion for machine learning and data analysis, I’ve had the privilege of blending technical expertise with leadership and project execution skills to drive impactful outcomes.",
+      "My journey has been shaped by hands-on experience in predictive modeling, deep learning, and building scalable data-driven solutions that solve real-world problems.",
+      "Throughout my career, I’ve developed and deployed machine learning and deep learning models, leveraging Python frameworks for diverse applications, including image processing and natural language processing.",
+      "My projects have ranged from building computer vision systems for object detection to conducting sentiment analysis, always with a focus on uncovering actionable insights from complex datasets.",
+    ],
+  },
+  {
+    title: "Data Analyst",
+    company_name: "Upwork",
+    icon: "/assets/company/drdo-cabs.svg",
+    iconBg: "#E0F7FA",
+    date: "Jan 2024 - Oct 2024",
+
+    points: [
+      "Developed a machine learning system for a data aggregation company to automate classification based on keywords, CPV (Common Procurement Vocabulary) codes, and sectors.",
+      "Leveraged advanced natural language processing (NLP) techniques to identify relevant keywords from dataset titles and map them to predefined classifications.",
+      "Enhanced the client's ability to process and classify data, reducing manual effort and improving accuracy in mapping data to CPV codes and sectors.",
+      "Built a system capable of handling real-time data inputs for continuous classification and analysis, significantly improving operational efficiency.",
+    ],
+  },
+  {
+    title: "Data Analyst",
+    company_name: "Freelancer",
+    icon: "/assets/company/gdsc-logo.svg",
+    iconBg: "#F4D03F",
+    date: "Sep 2023 - Dec 2023",
+    points: [
+      "Trained a deep learning model on a dataset of fetal ultrasound images, achieving promising classification results for four anatomical structures: abdomen, thorax, brain, and femur.",
+      "Performed thorough preprocessing on the dataset, including data augmentation and normalization to enhance the model's performance and generalization.",
+      "Designed and optimized a convolutional neural network (CNN) architecture for the classification task, demonstrating strong performance during training and evaluation.",
+      "Tested the model on a separate dataset, implemented a function to classify new input images, and organized the classified images into respective folders for easy result visualization and interpretation.",
+      "This pipeline sets the foundation for accurate fetal anatomical structure classification, with the potential to assist medical professionals in prenatal diagnostics.",
     ],
   },
   {
     title: "Python Developer",
     company_name: "Pranathi Software Services Pvt. Ltd",
-    icon: "/assets/company/drdo-cabs.png",
-    iconBg: "#E6DEDD",
+    icon: "/assets/company/gdsc-logo.svg",
+    iconBg: "#FFFBF5",
     date: "Feb 2023 - May 2023",
+    location: "Hyderabad, Telangana, India · On-site",
     points: [
-      "FBack End Development: Gained practical expertise in developing email notification systems and managing databases using Python.",
-      "Project Management: Acquired skills in planning, executing, and completing projects, effectively managing deliverables and deadlines.",
-      "Problem-Solving: Improved problem-solving abilities by tackling system integration and data security issues.",
-      "Team cooperation: Improved professional communication and cooperation skills, including the ability to work effectively with cross-functional teams.",
+      "Developed expertise in full-stack development, working with email notification systems, database administration, and Python programming.",
+      "Gained practical experience in project management, overseeing the planning, execution, and completion of tasks while effectively managing deliverables and deadlines.",
+      "Enhanced problem-solving skills by tackling system integration challenges and data security issues, contributing to improved software solutions.",
+      "Collaborated with cross-functional teams, improving communication and teamwork in a professional setting, while delivering results on collaborative projects.",
+      "Applied theoretical knowledge to real-world projects, understanding how technology can address community health issues and solve practical problems.",
     ],
   },
-  // {
-  //   title: "Frontend Developer",
-  //   company_name: "Tech team member at GDSC MVJCE",
-  //   icon: "/assets/company/gdsc-logo.svg",
-  //   iconBg: "#E6DEDD",
-  //   date: "February 2022 - July 2023",
-  //   points: [
-  //     "Successfully planned and executed induction programs, providing new members with crucial information about the organization's goals and values.",
-  //     "Demonstrated web development expertise by conducting CSS workshops, equipping participants with practical web design and styling skills.",
-  //     "Played a crucial role in promoting GDSC events and actively collaborated with cross-functional teams to deliver high-quality projects, fostering teamwork and innovation.",
-  //     "Actively engaged with the GDSC community, assisted in workshops, and contributed to planning and managing GDSC events, ensuring their success and growth.",
-  //   ],
-  // },
 ];
 
 const testimonials = [
@@ -280,96 +269,108 @@ const testimonials = [
 
 const projects = [
   {
-    name: "FigPro",
+    name: "Financial analysis in loan analytics",
     description:
-      "FigPro is a web-based collaborative design tool similar to Figma, built using Next.js, TypeScript, Tailwind CSS, and LiveBlocks API, Fabric.js. With FigPro, teams can seamlessly collaborate on designing interfaces in real-time with a plethora of features.",
+      "The Python Scripts calculates monthly payments for multiple loans, generates detailed amortization schedules for each loan, and then aggregates and saves this data into CSV and Excel files.",
     tags: [
       {
-        name: "typescript",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "next.js",
+        name: "Numpy",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "Pandas",
         color: "pink-text-gradient",
       },
       {
-        name: "fabricjs",
+        name: "Excel",
         color: "orange-text-gradient",
       },
       {
-        name: "liveblocks",
+        name: "csv",
         color: "yellow-text-gradient",
       },
+      {
+        name: "Jupyter Notebook",
+        color: "red-text-gradient",
+      },
     ],
-    image: "/assets/projects/fig-pro.png",
-    source_code_link: "https://github.com/Shivam-Sharma-1/FigPro",
-    deployed_link: "https://fig-pro-github.vercel.app",
+    image: "/assets/projects/finacel.jpeg",
+    source_code_link: "https://github.com/Satyanaryana-Merla/financial-analysis-in-loan-analytics",
+    deployed_link: "https://github.com/Satyanaryana-Merla/financial-analysis-in-loan-analytics/blob/main/Readme.md",
   },
   {
-    name: "GDSC Website",
+    name: "Automated Keyword, CPV Code, and Sector Classification Using Machine Learning",
     description:
-      "Welcome to the official repository for the GDSC MVJCE Website, built with Next.js, Styled Components, and Prisma! This website serves as the central hub for all things tech-related at GDSC MVJCE. From insightful blog posts to incredible community projects, and from exciting tech events to getting to know our team, you'll find it all here.",
+      "Developed a machine learning system for a data aggregation company to automatically classify data based on keywords, Common Procurement Vocabulary (CPV) codes, and sectors. The system utilizes advanced natural language processing (NLP) techniques to identify relevant keywords from dataset titles and then maps them to predefined CPV codes and sectors.",
     tags: [
       {
-        name: "next.js",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "styled-components",
+        name: "Scikit-learn:",
         color: "green-text-gradient",
       },
       {
-        name: "three.js",
+        name: "NLTK",
         color: "pink-text-gradient",
       },
       {
-        name: "prisma",
+        name: "Pandas",
         color: "orange-text-gradient",
       },
       {
-        name: "framer-motion",
+        name: "NumPy",
         color: "yellow-text-gradient",
       },
+      {
+        name: "Docker",
+        color: "red-text-gradient",
+      },
     ],
-    image: "/assets/projects/gdsc-website.png",
-    source_code_link: "https://github.com/GDSC-MVJCE/gdscmvjce-website.git",
-    deployed_link: "https://gdscmvjce.vercel.app/",
+    image: "/assets/projects/Machine-Learning.jpg",
+    source_code_link: "https://www.linkedin.com/in/satyanarayanamerla/details/",
+    // deployed_link: "https://www.linkedin.com/in/satyanarayanamerla/details/projects/",
   },
   {
-    name: "Facility Management System",
+    name: "Classifying anatomical structure in 2D fetal ultrasound images",
     description:
-      "The Facility Management System is a comprehensive management solution developed using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to book time slots in facilities and provides role-based access control for various functionalities.",
+      "A deep learning model was trained on fetal ultrasound images, achieving promising classification results across four anatomical structures. The model was optimized and tested on a separate dataset. The code organized and saved classified images, establishing a robust pipeline for accurate fetal anatomical structure classification.",
     tags: [
       {
-        name: "typescript",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "Scikit-learn:",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "CNN",
         color: "pink-text-gradient",
       },
       {
-        name: "node.js",
+        name: "Pandas",
         color: "orange-text-gradient",
       },
       {
-        name: "tanstack/react-query",
+        name: "NumPy",
         color: "yellow-text-gradient",
       },
+      {
+        name: "Keras",
+        color: "red-text-gradient",
+      },
     ],
-    image: "/assets/projects/facility-manager.png",
+    image: "/assets/projects/project3.jpeg",
     source_code_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System",
-    deployed_link:
-      "https://github.com/Shivam-Sharma-1/Facility-Management-System?tab=readme-ov-file#demo",
+      "https://github.com/Satyanaryana-Merla/Classifying-anatomical-structure-in-2D-fetal-ultrasound-images",
+    // deployed_link:
+    //   "",
   },
   // {
   //   name: "Netflix Clone",
@@ -467,17 +468,21 @@ const socials = [
 ];
 
 const heroTexts = [
-  "React/Next.js developer",
+  "Machine Learning and Predictive Modeling",
   500,
-  "Freelancer",
+  "Natural Language Processing (NLP)",
   500,
-  "Full-Stack developer",
+  "Business Intelligence and Visualization",
   500,
-  "Frontend developer",
+  "Data Analysis and Exploration",
   500,
-  "Backend developer",
+  "Data Engineering",
   500,
-  "Tech Team Lead at GDSC MVJCE",
+  "Data Strategy Consulting",
+  500,
+  "Research and Development",
+  500,
+  "Training and Support",
   500,
 ];
 

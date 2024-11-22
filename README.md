@@ -79,7 +79,3 @@ The project structure is organized as follows:
 -   `public`: Static assets, such as images and fonts.
 -   `pages`: Individual pages of the website.
 -   `utils`: Utility functions or helper scripts.
-
-## Author
-
--   [@Shivam-Sharma-1](https://github.com/Shivam-Sharma-1)
