@@ -209,7 +209,7 @@ const experiences = [
     ],
   },
   {
-    title: "Data Analyst",
+    title: "Data Analyst, ML",
     company_name: "Upwork",
     icon: "/assets/company/drdo-cabs.svg",
     iconBg: "#E0F7FA",
@@ -223,7 +223,7 @@ const experiences = [
     ],
   },
   {
-    title: "Data Analyst",
+    title: "Data Analyst, ML",
     company_name: "Freelancer",
     icon: "/assets/company/gdsc-logo.svg",
     iconBg: "#F4D03F",
