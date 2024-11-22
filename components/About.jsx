@@ -28,7 +28,13 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          Hello! I&apos;m Satyanarayana Merla, I have data science experience, having worked at Trysol Global Services, where I examined complicated information, created predictive models, and used machine learning techniques to generate actionable insights. In this capacity, I worked with a variety of departments, including IT, marketing, and operations, and gained firsthand knowledge with cutting-edge technology and processes. This experience has improved my analytical skills and prepared me to face real-world difficulties while working on projects that promote innovation and data-driven decision-making.
+          As a data scientist passionate about machine learning and data analysis, I thrive on uncovering insights from complex data and building solutions that deliver business value. With expertise in predictive modeling, deep learning, and Python frameworks, I have hands-on experience in image processing, natural language processing, and scalable ML solutions. 
+
+        I enjoy pushing boundaries, collaborating with cross-functional teams, and driving impactful, data-driven decisions. Areas of keen interest include advancements in deep learning, transfer learning, model explainability, and production deployment of ML models. I’m excited to continue growing in this field, sharing knowledge, and driving innovation.
+        
+      
+        Let’s connect to explore opportunities in data science and machine learning!
+
           <br className="sm:block hidden" />
           Let&apos;s collaborate to bring your ideas to life!
         </div>
