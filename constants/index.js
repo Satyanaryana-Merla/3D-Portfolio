@@ -183,11 +183,24 @@ const technologies = {
 
 const experiences = [
   {
+    title: "Junior Data Engineer",
+    company_name: "Vector ML Analytics",
+    icon: "/assets/company/gdsc-logo.svg",
+    iconBg: "#E6DEDD",
+    date: "Dec 2024 - Present",
+    points: [
+      "As a backend data engineer with a passion for data architecture and efficient system design, I’ve had the privilege of blending technical expertise with problem-solving skills to deliver impactful and scalable solutions.",
+      "My projects have ranged from creating ETL processes to integrate and transform data from multiple sources to implementing RESTful APIs for real-time data access, always with a focus on ensuring data reliability, security, and accessibility",
+      "Throughout my career, I’ve designed, developed, and optimized data pipelines and APIs, leveraging Python frameworks and cloud technologies to handle diverse and large-scale data operations.",
+      "My projects have ranged from creating ETL processes to integrate and transform data from multiple sources to implementing RESTful APIs for real-time data access, always with a focus on ensuring data reliability, security, and accessibility."
+    ],
+  },
+  {
     title: "Data Scientist",
     company_name: "Trysol Global Services",
     icon: "/assets/company/gdsc-logo.svg",
     iconBg: "#E6DEDD",
-    date: "Aug 2024 - Present",
+    date: "Aug 2024 - Nov 2024",
     points: [
       "As a data scientist with a passion for machine learning and data analysis, I’ve had the privilege of blending technical expertise with leadership and project execution skills to drive impactful outcomes.",
       "My journey has been shaped by hands-on experience in predictive modeling, deep learning, and building scalable data-driven solutions that solve real-world problems.",

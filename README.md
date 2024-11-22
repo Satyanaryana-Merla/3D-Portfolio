@@ -16,7 +16,7 @@
 
 ## Demo
 
-You can see a live demo of the portfolio website at [https://shivam-sharma-myportfolio.vercel.app/](https://shivam-sharma-myportfolio.vercel.app/).
+You can see a live demo of the portfolio website at [https://satyanarayana-merla.vercel.app/](https://satyanarayana-merla.vercel.app/).
 
 ## Features
 
@@ -47,7 +47,7 @@ You can see a live demo of the portfolio website at [https://shivam-sharma-mypor
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/Shivam-Sharma-1/3D-Portfolio
+git clone https://github.com/Satyanaryana-Merla/3D-Portfolio
 ```
 
 2. Change to the project directory:
