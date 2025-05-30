@@ -122,22 +122,12 @@ function Contact() {
                 </a>
               </div>
             </div>
-            
-            <div className="flex items-start gap-3">
-              <span className="text-primary mt-1">📱</span>
-              <div>
-                <p className="font-semibold text-white">Phone/WhatsApp</p>
-                <a href="tel:+919493474149" className="text-gray-400 hover:text-primary transition-colors">
-                  +91 9493474149
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
         <div className="pt-4 border-t border-gray-700">
           <p className="text-gray-500 text-sm italic">
-            💡 Preferred contact: Email for professional inquiries | WhatsApp for quick discussions
+            💡 Feel free to reach out via email for any professional inquiries or opportunities
           </p>
         </div>
       </div>
