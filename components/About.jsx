@@ -33,7 +33,7 @@ function About() {
           </p>
           
           <p>
-            As a <span className="text-primary font-semibold">Data Engineer at Vector ML Analytics</span>, I architect robust data pipelines and optimize large-scale data operations. With <span className="text-primary font-semibold">2+ years of experience</span> in data science and ML engineering, I've successfully delivered solutions processing 100GB+ daily data streams and saving organizations over $545K through automation and optimization.
+            As a <span className="text-primary font-semibold">Data Engineer at Vector ML Analytics</span>, I architect robust data pipelines and optimize large-scale data operations. With <span className="text-primary font-semibold">2+ years of experience</span> in data science and ML engineering, I&apos;ve successfully delivered solutions processing 100GB+ daily data streams and saving organizations over $545K through automation and optimization.
           </p>
 
           <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
@@ -48,11 +48,11 @@ function About() {
           </div>
 
           <p>
-            My expertise spans <span className="text-primary font-semibold">machine learning, data engineering, and AI solutions</span>. I've developed ML models with 94%+ accuracy, built NLP pipelines for 500K+ records, and created computer vision systems for medical diagnostics. Previously delivered impactful solutions as a Data Scientist at Trysol Global and through freelance engagements on Upwork (Top Rated) and Freelancer.
+            My expertise spans <span className="text-primary font-semibold">machine learning, data engineering, and AI solutions</span>. I&apos;ve developed ML models with 94%+ accuracy, built NLP pipelines for 500K+ records, and created computer vision systems for medical diagnostics. Previously delivered impactful solutions as a Data Scientist at Trysol Global and through freelance engagements on Upwork (Top Rated) and Freelancer.
           </p>
 
           <p className="italic text-primary">
-            "I transform complex data challenges into scalable, production-ready solutions that drive real business value. Let's discuss how I can help your organization leverage data for competitive advantage!"
+            &quot;I transform complex data challenges into scalable, production-ready solutions that drive real business value. Let&apos;s discuss how I can help your organization leverage data for competitive advantage!&quot;
           </p>
         </div>
         <div className="w-fit break-words">

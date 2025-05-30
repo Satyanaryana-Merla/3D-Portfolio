@@ -84,10 +84,10 @@ function Contact() {
 
       <div className="mt-8 space-y-6">
         <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-          <h4 className="text-lg font-semibold text-white mb-3">Let's Connect!</h4>
+          <h4 className="text-lg font-semibold text-white mb-3">Let&apos;s Connect!</h4>
           <p className="text-gray-300 mb-4">
-            I'm currently <span className="text-primary font-semibold">open to new opportunities</span> in Data Science, 
-            Machine Learning Engineering, and Data Engineering roles. Looking for someone who can transform your data into actionable insights? Let's talk!
+            I&apos;m currently <span className="text-primary font-semibold">open to new opportunities</span> in Data Science, 
+            Machine Learning Engineering, and Data Engineering roles. Looking for someone who can transform your data into actionable insights? Let&apos;s talk!
           </p>
         </div>
 

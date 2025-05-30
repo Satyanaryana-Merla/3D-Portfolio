@@ -49,7 +49,7 @@ function Statistics() {
         className="mt-12 text-center"
       >
         <p className="text-gray-400 text-lg italic">
-          "Turning data into decisions, one pipeline at a time"
+          &quot;Turning data into decisions, one pipeline at a time&quot;
         </p>
       </motion.div>
     </section>
