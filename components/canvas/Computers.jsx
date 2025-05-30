@@ -6,7 +6,7 @@ import {
 } from "@react-three/drei";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import CanvasLoader from "../Loader";
 import ComputerModel from "./models/ComputerModel";
@@ -16,12 +16,16 @@ function Computers({ isMobile }) {
 
   return (
     <>
-      <hemisphereLight intensity={1} groundColor="black" />
-      <ambientLight intensity={0.65} />
-      <spotLight intensity={1} position={[0, 1.5, 0.7]} angle={0.12} />
+      <hemisphereLight intensity={0.5} groundColor="black" />
+      <ambientLight intensity={0.4} />
+      <spotLight intensity={0.8} position={[0, 1.5, 0.7]} angle={0.12} />
       <PerspectiveCamera makeDefault position={[0, 0, -8]} fov={30} />
-      <pointLight intensity={2} position={[1, 1.3, 0]} color={"#804dee"} />
-      <pointLight intensity={2} position={[-1, 1.3, 1]} color={"#804dee"} />
+      {!isMobile && (
+        <>
+          <pointLight intensity={1.5} position={[1, 1.3, 0]} color={"#804dee"} />
+          <pointLight intensity={1.5} position={[-1, 1.3, 1]} color={"#804dee"} />
+        </>
+      )}
       <OrbitControls
         enableZoom={false}
         maxPolarAngle={Math.PI / 2}
@@ -29,8 +33,8 @@ function Computers({ isMobile }) {
         enableDamping={true}
         dampingFactor={0.05}
         enablePan={false}
-        autoRotateSpeed={4}
-        autoRotate={isMobile && true}
+        autoRotateSpeed={isMobile ? 2 : 4}
+        autoRotate={false}
         makeDefault
       />
       <ComputerModel
@@ -45,15 +49,25 @@ function Computers({ isMobile }) {
 }
 
 function ComputersCanvas({ isMobile }) {
+  const [dpr, setDpr] = useState([1, 1]);
+
+  useEffect(() => {
+    // Use lower DPR for mobile devices
+    setDpr(isMobile ? [1, 1] : [1, 2]);
+  }, [isMobile]);
+
   return (
     <Canvas
-      dpr={[1, 2]}
+      dpr={dpr}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{
+        powerPreference: "high-performance",
+        antialias: !isMobile,
         outputColorSpace: THREE.SRGBColorSpace,
         alpha: true,
       }}
       className="cursor-pointer"
+      frameloop="demand"
     >
       <Suspense fallback={<CanvasLoader />}>
         <Computers isMobile={isMobile} />
@@ -62,5 +76,8 @@ function ComputersCanvas({ isMobile }) {
     </Canvas>
   );
 }
+
+// Preload the model
+useGLTF.preload("/models/desktop_pc/scene.gltf");
 
 export default ComputersCanvas;

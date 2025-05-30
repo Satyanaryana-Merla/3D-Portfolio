@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /assets/company/
+Disallow: /assets/background/
+
+# Sitemap
+Sitemap: https://satyanarayana-portfolio.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1 

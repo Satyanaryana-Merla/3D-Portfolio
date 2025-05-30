@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "analyze": "ANALYZE=true next build",
+        "build:prod": "NODE_ENV=production next build && next export"
     },
     "dependencies": {
         "@emailjs/browser": "^3.11.0",

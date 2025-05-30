@@ -73,7 +73,7 @@ function Navbar() {
 								Satyanarayana Merla &nbsp;
 								<span className="lg:block hidden">
 									{" "}
-									| Data Scientist
+									| Data Engineer
 								</span>
 							</p>
 						</Link>

@@ -22,15 +22,23 @@ export function PreLoader() {
 	const [progress, setProgress] = useState(0);
 
 	useEffect(() => {
-		const updateProgress = () => {
-			for (let i = 0; i < 100; i++) {
-				setTimeout(() => {
-					setProgress(i);
-				}, 30 * i);
-			}
-		};
+		// More realistic loading simulation
+		const duration = 500; // 500ms total duration (matching _app.js)
+		const interval = 10; // Update every 10ms
+		const increment = 100 / (duration / interval);
+		
+		const timer = setInterval(() => {
+			setProgress((prev) => {
+				const next = prev + increment;
+				if (next >= 100) {
+					clearInterval(timer);
+					return 100;
+				}
+				return next;
+			});
+		}, interval);
 
-		updateProgress();
+		return () => clearInterval(timer);
 	}, []);
 
 	return (
@@ -40,9 +48,12 @@ export function PreLoader() {
 				<div className="loader_cube loader_cube--glowing"></div>
 				<span className="loader-span"></span>
 			</div>
-			<h1 className="text-2xl text-ctnPrimaryLight dark:text-ctnPrimaryDark">
-				{progress}%
-			</h1>
+			<div className="flex flex-col items-center gap-2">
+				<h1 className="text-2xl text-ctnPrimaryLight dark:text-ctnPrimaryDark font-semibold">
+					{Math.round(progress)}%
+				</h1>
+				<p className="text-sm text-gray-500 dark:text-gray-400">Loading Portfolio...</p>
+			</div>
 		</div>
 	);
 }

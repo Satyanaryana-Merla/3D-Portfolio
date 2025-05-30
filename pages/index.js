@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 import {
   About,
@@ -6,15 +7,34 @@ import {
   Experience,
   Hero,
   Navbar,
-  StarsCanvas,
+  Publications,
+  Statistics,
   Tech,
   Works,
 } from "@/components";
-import HeroBackground from "@/components/HeroBackground";
-import EarthContainer from "@/components/EarthContainer";
-import PlayerContainer from "@/components/PlayerContainer";
-import UpArrow from "./../public/assets/icons/up-arrow.svg";
 import Services from "@/components/Services";
+import UpArrow from "./../public/assets/icons/up-arrow.svg";
+
+// Lazy load heavy 3D components
+const HeroBackground = dynamic(() => import("@/components/HeroBackground"), {
+  ssr: false,
+  loading: () => <div className="absolute top-0 w-full h-[100svh] bg-gradient-to-b from-opacity-[6.33%] dark:from-[#322d6d] from-[#b0afb1] to-opacity-[39.13%] dark:to-[#663182] to-[#51afda]" />
+});
+
+const EarthContainer = dynamic(() => import("@/components/EarthContainer"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full" />
+});
+
+const PlayerContainer = dynamic(() => import("@/components/PlayerContainer"), {
+  ssr: false,
+  loading: () => <div className="w-full h-full" />
+});
+
+const StarsCanvas = dynamic(() => import("@/components").then(mod => mod.StarsCanvas), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0" />
+});
 
 function App({ loading }) {
   useEffect(() => {
@@ -50,9 +70,11 @@ function App({ loading }) {
         {!isMobile && <PlayerContainer isMobile={isMobile} />}
       </section>
       <Services />
+      <Statistics />
       <Experience />
       <Tech />
       <Works />
+      <Publications />
       {/* <Feedbacks /> */}
       <section className="relative z-0 flex md:flex-row justify-between flex-col-reverse w-full h-full overflow-x-hidden sm:p-8 p-2 pb-8">
         <Contact />

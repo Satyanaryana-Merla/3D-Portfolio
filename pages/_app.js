@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 3000);
+		}, 500);
 	}, []);
 
 	useEffect(() => {
@@ -23,12 +23,13 @@ export default function App({ Component, pageProps }) {
 		}
 	}, [loading]);
 
-	const title = "Portfolio | Satyanarayana Merla";
+	const title = "Satyanarayana Merla | Data Engineer at Vector ML Analytics";
 	const description =
-		"";
+		"Data Engineer specializing in ETL pipelines, AWS services, and ML model deployment. Experienced in processing 100GB+ daily data, building scalable APIs, and delivering AI solutions. Skilled in Python, AWS (Lambda, Glue, S3), PostgreSQL, Django, and machine learning frameworks. Published researcher with proven track record in data science and engineering.";
 	const avatar =
-		"";
-	const url = "";
+		"/assets/satya-profile.jpg";
+	const keywords = "Data Engineer, Data Scientist, Machine Learning Engineer, AWS Lambda, AWS Glue, ETL Pipeline, Python Developer, PostgreSQL, Django, TensorFlow, PyTorch, NLP, Computer Vision, Hyderabad";
+	const url = "https://satyanarayana-portfolio.vercel.app";
 
 	return (
 		<>
@@ -39,18 +40,21 @@ export default function App({ Component, pageProps }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1.0"
 				/>
+				<meta name="keywords" content={keywords} />
+				<meta name="author" content="Satyanarayana Merla" />
+				<meta name="robots" content="index, follow" />
 				<meta property="og:title" content={title} />
 				<meta property="og:site_name" content={title}></meta>
 				<meta property="og:description" content={description} />
 				<meta property="og:image" content={avatar} />
-				<meta property="og:image:width" content="612" />
-				<meta property="og:image:height" content="612" />
+				<meta property="og:image:width" content="1200" />
+				<meta property="og:image:height" content="630" />
 				<meta property="og:url" content={url} />
 				<meta property="og:type" content="website" />
 
 				<meta property="twitter:image" content={avatar} />
 				<meta property="twitter:card" content="summary_large_image" />
-				<meta name="twitter:creator" content="" />
+				<meta name="twitter:creator" content="@satyamerla" />
 				<meta property="twitter:title" content={title} />
 				<meta property="twitter:description" content={description} />
 

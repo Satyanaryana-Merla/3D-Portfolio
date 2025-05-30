@@ -27,16 +27,33 @@ function About() {
         viewport={{ once: true, amount: 0.25 }}
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
-        <div>
-          As a data scientist passionate about machine learning and data analysis, I thrive on uncovering insights from complex data and building solutions that deliver business value. With expertise in predictive modeling, deep learning, and Python frameworks, I have hands-on experience in image processing, natural language processing, and scalable ML solutions. 
+        <div className="space-y-4">
+          <p className="font-semibold text-white text-xl">
+            Data Engineer at Vector ML Analytics | Building Scalable Data Solutions
+          </p>
+          
+          <p>
+            As a <span className="text-primary font-semibold">Data Engineer at Vector ML Analytics</span>, I architect robust data pipelines and optimize large-scale data operations. With <span className="text-primary font-semibold">2+ years of experience</span> in data science and ML engineering, I've successfully delivered solutions processing 100GB+ daily data streams and saving organizations over $545K through automation and optimization.
+          </p>
 
-        I enjoy pushing boundaries, collaborating with cross-functional teams, and driving impactful, data-driven decisions. Areas of keen interest include advancements in deep learning, transfer learning, model explainability, and production deployment of ML models. I’m excited to continue growing in this field, sharing knowledge, and driving innovation.
-        
-      
-        Let’s connect to explore opportunities in data science and machine learning!
+          <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+            <p className="font-semibold text-white mb-2">Current Role Highlights:</p>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Architecting ETL pipelines using AWS Glue, Lambda, and S3 for 100GB+ daily data</li>
+              <li>Implementing real-time data integration with Plaid API for 10K+ users</li>
+              <li>Optimizing PostgreSQL databases, reducing query time by 65%</li>
+              <li>Building automated data quality frameworks with 99% anomaly detection</li>
+              <li>Leading cloud migration initiatives, saving $15K/month in infrastructure</li>
+            </ul>
+          </div>
 
-          <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
+          <p>
+            My expertise spans <span className="text-primary font-semibold">machine learning, data engineering, and AI solutions</span>. I've developed ML models with 94%+ accuracy, built NLP pipelines for 500K+ records, and created computer vision systems for medical diagnostics. Previously delivered impactful solutions as a Data Scientist at Trysol Global and through freelance engagements on Upwork (Top Rated) and Freelancer.
+          </p>
+
+          <p className="italic text-primary">
+            "I transform complex data challenges into scalable, production-ready solutions that drive real business value. Let's discuss how I can help your organization leverage data for competitive advantage!"
+          </p>
         </div>
         <div className="w-fit break-words">
           <Link

@@ -1,0 +1,5 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#10B981"/>
+  <text x="200" y="150" text-anchor="middle" dy=".3em" fill="white" font-family="Arial" font-size="24" font-weight="bold">Crop Recommendation</text>
+  <text x="200" y="180" text-anchor="middle" dy=".3em" fill="white" font-family="Arial" font-size="16">ML Project</text>
+</svg> 

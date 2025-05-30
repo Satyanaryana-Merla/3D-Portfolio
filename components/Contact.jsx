@@ -82,9 +82,65 @@ function Contact() {
       <p className={"sectionSubText text-ctnSecondaryDark"}>Get in touch</p>
       <h3 className={"sectionHeadText text-ctnPrimaryDark"}>Contact.</h3>
 
-      <p className="text-gray-400">
-      Want to chat or have a conversation? WhatsApp or call me directly at <b className="text-gray-200">+91 9493474149</b>. Alternatively, email me at <b className="text-gray-200">merlasatyanarayana123@gmail.com</b>, and I’ll get back to you soon. I will ignore all soliciting.
-      </p>
+      <div className="mt-8 space-y-6">
+        <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+          <h4 className="text-lg font-semibold text-white mb-3">Let's Connect!</h4>
+          <p className="text-gray-300 mb-4">
+            I'm currently <span className="text-primary font-semibold">open to new opportunities</span> in Data Science, 
+            Machine Learning Engineering, and Data Engineering roles. Looking for someone who can transform your data into actionable insights? Let's talk!
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="space-y-3">
+            <div className="flex items-start gap-3">
+              <span className="text-primary mt-1">📍</span>
+              <div>
+                <p className="font-semibold text-white">Location</p>
+                <p className="text-gray-400">Hyderabad, India</p>
+                <p className="text-gray-500 text-sm">Open to Remote & Relocation</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <span className="text-primary mt-1">⏰</span>
+              <div>
+                <p className="font-semibold text-white">Availability</p>
+                <p className="text-gray-400">Immediate</p>
+                <p className="text-gray-500 text-sm">Full-time positions preferred</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <div className="flex items-start gap-3">
+              <span className="text-primary mt-1">📧</span>
+              <div>
+                <p className="font-semibold text-white">Email</p>
+                <a href="mailto:merlasatyanarayana123@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
+                  merlasatyanarayana123@gmail.com
+                </a>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <span className="text-primary mt-1">📱</span>
+              <div>
+                <p className="font-semibold text-white">Phone/WhatsApp</p>
+                <a href="tel:+919493474149" className="text-gray-400 hover:text-primary transition-colors">
+                  +91 9493474149
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-4 border-t border-gray-700">
+          <p className="text-gray-500 text-sm italic">
+            💡 Preferred contact: Email for professional inquiries | WhatsApp for quick discussions
+          </p>
+        </div>
+      </div>
     </motion.div>
   );
 }
